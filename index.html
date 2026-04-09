@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Isabella Brandão | Designer Gráfico e Webdesigner</title>
+    <meta
+      name="description"
+      content="Portfólio profissional com projetos, serviços, experiência e contato." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header" id="topo">
+      <div class="container nav">
+        <a href="#topo" class="logo">ISABELLA <span>BRANDÃO</span></a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="menu" id="menu">
+          <a href="#projetos">Projetos</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#contato" class="btn btn-outline">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-text reveal">
+      
+            <h1>
+              Crio <span>sites e projetos visuais</span> com identidade,
+              estratégia e presença digital.
+            </h1>
+            <p class="hero-description">
+              Sou designer gráfica formada em Artes pela Universidade Federal
+              Fluminense, com formação em Webdesign pelo SENAC-RJ. Atualmente,
+              curso pós-graduação em UI Design, ampliando minha atuação no
+              desenvolvimento de interfaces digitais funcionais e visualmente
+              estratégicas.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projetos" class="btn">Veja meus projetos</a>
+              <a href="https://wa.me/5521976135781" class="btn btn-secondary">Entre em contato</a>
+            </div>
+
+            <ul class="hero-numbers">
+              <li>
+                <strong>+20</strong>
+                <span>projetos entregues</span>
+              </li>
+              <li>
+                <strong>5+</strong>
+                <span>anos de experiência</span>
+              </li>
+              
+            </ul>
+          </div>
+
+          <div class="hero-card reveal delay-1">
+            <div class="profile-card">
+              <div class="profile-badge">Disponível para novos projetos</div>
+              <div class="profile-header">
+                <img
+                  src="./imagens/perfil.webp"
+                  alt=""
+                  class="profile-avatar" />
+                <h2>Isabella Brandão</h2>
+              </div>
+
+              <p>Designer gráfico, webdesigner e artista multimídia</p>
+
+              <div class="profile-tags">
+                <span>Pacote Adobe</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Figma</span>
+                <span>WordPress</span>
+              </div>
+
+              <div class="profile-panel">
+                <p>Especialidade</p>
+                <strong
+                  >Design gráfico (criação de posts para redes sociais e
+                  materiais impressos como flyers, posters, banners), sites
+                  (tanto em HTML/CSS como WordPress)</strong
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projetos">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Portfólio</p>
+            <h2>Conheça meus projetos</h2>
+          </div>
+
+          <div class="filters-wrapper">
+            <div class="filters">
+              <button class="filter-btn active" data-filter="web">Sites</button>
+              <button class="filter-btn" data-filter="design">
+                Design Gráfico
+              </button>
+            </div>
+          </div>
+
+         <!-- CARROSSEL DE SITES -->
+<div class="sites-carousel" id="sitesCarousel">
+
+  <button class="carousel-arrow prev" id="prevSlide">&#10094;</button>
+
+  <div class="carousel-track-wrapper">
+    <div class="carousel-track" id="carouselTrack">
+
+      <!-- SITE 1 -->
+      <article class="carousel-slide">
+        <div class="project-card">
+          <div class="project-image scroll-preview">
+            <img src="imagens/site1.webp" alt="Dr. Milton Nakano" />
+          </div>
+          <div class="project-content">
+            <span class="project-category">Site institucional</span>
+            <h3>Dr. Milton Nakano</h3>
+            <p>
+              Site institucional para o Dr. Milton Nakano, voltado à apresentação dos serviços em cirurgia oncológica e à facilitação do contato com pacientes.
+            </p>
+            <a href="https://www.drmiltonnakano.com.br" target="_blank" class="project-link">Ver site</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- SITE 2 -->
+      <article class="carousel-slide">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="imagens/site2.webp" alt="Dr. Lucas Bárberi" />
+          </div>
+          <div class="project-content">
+            <span class="project-category">Site institucional</span>
+            <h3>Dr. Lucas Bárberi</h3>
+            <p>
+              Site institucional para o Dr. Lucas Bárberi, voltado à apresentação dos serviços em cirurgia oncológica e à facilitação do contato com pacientes.
+            </p>
+            <a href="https://drlucasbarberi.com.br" target="_blank" class="project-link">Ver site</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- SITE 3 -->
+      <article class="carousel-slide">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="imagens/site3.webp" alt="Dr. Bernardo Nogueira" />
+          </div>
+          <div class="project-content">
+            <span class="project-category">Site institucional</span>
+            <h3>Dr. Bernardo Nogueira</h3>
+            <p>
+              Site institucional para o Dr. Bernardo Nogueira, voltado à apresentação dos serviços e à facilitação do contato com pacientes.
+            </p>
+            <a href="https://drbernardobatista.com.br" target="_blank" class="project-link">Ver site</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- SITE 4 -->
+      <article class="carousel-slide">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="imagens/site4.webp" alt="SERMED" />
+          </div>
+          <div class="project-content">
+            <span class="project-category">Site institucional</span>
+            <h3>SERMED</h3>
+            <p>
+              Site institucional para a clínica Sermed voltado à apresentação dos serviços multidisciplinares da clínica e à facilitação do contato com pacientes.
+            </p>
+            <a href="https://sermednp.com.br" target="_blank" class="project-link">Ver site</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <div class="carousel-dots" id="carouselDots"></div>
+
+  <button class="carousel-arrow next" id="nextSlide">&#10095;</button>
+</div>
+
+
+<!-- GRID DE DESIGN -->
+<div class="projects-grid design-grid" id="designGrid">
+  <article class="reveal design-item" data-category="design">
+    <button
+      class="project-open"
+      data-gallery="posters"
+      aria-label="Abrir projeto Posters">
+      <div class="project-image">
+        <img src="imagens/poster.png" alt="Projeto Posters" />
+      </div>
+    </button>
+  </article>
+
+  <article class="reveal design-item" data-category="design">
+    <button
+      class="project-open"
+      data-gallery="banners"
+      aria-label="Abrir projeto Banners">
+      <div class="project-image">
+        <img src="imagens/banners.png" alt="Projeto Banners" />
+      </div>
+    </button>
+  </article>
+</div>
+      </section>
+
+      <!--section class="section section-dark" id="servicos">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Serviços</p>
+            <h2>Serviços personalizados para fortalecer sua presença digital.</h2>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card reveal">
+              <span class="service-number">01</span>
+              <h3>Sites profissionais</h3>
+              <p>
+                Desenvolvimento de sites responsivos, rápidos e com visual
+                alinhado à identidade da marca. Em HTML/CSS/JS ou WordPress.
+              </p>
+            </article>
+
+            <article class="service-card reveal delay-1">
+              <span class="service-number">02</span>
+              <h3>Landing pages</h3>
+              <p>
+                Páginas com estrutura estratégica para conversão.
+              </p>
+            </article>
+
+            <article class="service-card reveal delay-2">
+              <span class="service-number">03</span>
+              <h3>Design Gráfico</h3>
+              <p>
+                Criação de artes para Instagram e Facebook e itens de papelaria, anuncios em midia offline.
+              </p>
+            </article>
+
+        
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="sobre">
+        <div class="container about-grid">
+          <div class="about-text reveal">
+            <p class="eyebrow">Sobre mim</p>
+            <h2>
+              Design e código trabalhando juntos para construir presença digital
+              de forma elegante.
+            </h2>
+            <p>
+              Meu trabalho combina estética, usabilidade e organização de
+              conteúdo. Busco criar páginas que transmitam profissionalismo,
+              comuniquem valor e ofereçam uma navegação agradável em qualquer
+              dispositivo.
+            </p>
+
+            <div class="timeline">
+              <div class="timeline-item">
+                <span>2026</span>
+                <div>
+                  <h3>Projetos autorais e clientes</h3>
+                  <p>
+                    Criação de sites e páginas sob medida para marcas e
+                    profissionais.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <span>2024</span>
+                <div>
+                  <h3>Especialização em front-end</h3>
+                  <p>
+                    Aprofundamento em HTML, CSS moderno, JavaScript e interfaces
+                    responsivas.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <span>2023</span>
+                <div>
+                  <h3>Início da atuação</h3>
+                  <p>
+                    Desenvolvimento de projetos para portfólio e primeiros
+                    trabalhos profissionais.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="skills-card reveal delay-1">
+            <h3>Ferramentas e competências</h3>
+
+            <div class="skill-list">
+              <div class="skill">
+                <span>HTML</span>
+                <div class="skill-bar"><i style="width: 95%"></i></div>
+              </div>
+              <div class="skill">
+                <span>CSS</span>
+                <div class="skill-bar"><i style="width: 92%"></i></div>
+              </div>
+              <div class="skill">
+                <span>JavaScript</span>
+                <div class="skill-bar"><i style="width: 80%"></i></div>
+              </div>
+              <div class="skill">
+                <span>Figma</span>
+                <div class="skill-bar"><i style="width: 88%"></i></div>
+              </div>
+            </div>
+
+            <div class="soft-skills">
+              <span>Design responsivo</span>
+              <span>Organização visual</span>
+              <span>Performance</span>
+              <span>UX básica</span>
+            </div>
+          </aside>
+        </div>
+      </section-->
+
+      <section class="section cta-section" id="contato">
+        <div class="container cta-box reveal">
+          <p class="eyebrow">Vamos criar juntos?</p>
+          <h2>
+            Se você quer uma arte, identidade visuaal ou site profissional, posso transformar
+            sua ideia em uma página elegante e funcional.
+          </h2>
+          <p>
+            Me envie uma mensagem com o que você precisa e eu posso montar uma
+            estrutura ideal para o seu projeto.
+          </p>
+
+          <div class="cta-actions">
+            <a href="https://wa.me/5521976135781" target="_blank" class="btn"
+              >WhatsApp</a
+            >
+            <a href="mailto:isaxedes@gmail.com" class="btn btn-secondary"
+              >E-mail</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>© 2026 Isabella Brandçao. Todos os direitos reservados.</p>
+        <div class="socials">
+                    <a href="https://www.linkedin.com/in/isabella-brandão-2b718523a/">LinkedIn</a>
+          <a href="behance.net/ellabrand">Behance</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox">
+  <div class="lightbox-overlay" id="lightboxOverlay"></div>
+
+  <div class="lightbox-content">
+    <button class="lightbox-close" id="lightboxClose">&times;</button>
+    <div class="lightbox-gallery" id="lightboxGallery"></div>
+  </div>
+</div>
+
+<div class="image-viewer" id="imageViewer">
+  <div class="image-viewer-overlay" id="imageViewerOverlay"></div>
+  <img id="imageViewerImg" src="" alt="Imagem ampliada" />
+</div>
+
+<script src="script.js"></script>
+  </body>
+</html>
