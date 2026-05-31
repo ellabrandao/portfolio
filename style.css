@@ -316,6 +316,12 @@ img {
     color: var(--muted);
 }
 
+.design-more {
+    display: none;
+    justify-content: center;
+    margin-top: 34px;
+}
+
 /* FILTERS */
 
 .filters {
@@ -413,7 +419,7 @@ img {
 
 .project-card:hover {
     transform: translateY(-6px);
-    box-shadow: var(--shadow);
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
 }
 
 
@@ -461,10 +467,6 @@ img {
     margin-bottom: 14px;
 }
 
-.project-link {
-    font-weight: 700;
-    font-size: 0.9rem;
-}
 
 .design-grid {
     display: grid;
@@ -988,6 +990,59 @@ body.lightbox-open {
     animation: zoomIn 0.3s ease;
 }
 
+/* Banners*/
+
+.lightbox-banners .lightbox-gallery {
+    display: block;
+    columns: 3 240px;
+    column-gap: 16px;
+}
+
+.lightbox-banners .lightbox-gallery img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+    display: block;
+    break-inside: avoid;
+    margin-bottom: 16px;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Layouts*/
+
+.lightbox-layouts .lightbox-content {
+    width: min(100% - 32px, 900px);
+}
+
+.lightbox-layouts .lightbox-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+
+.lightbox-layouts .lightbox-gallery img {
+    width: 100%;
+    max-height: 260px;
+    height: auto;
+    aspect-ratio: 3 / 1;
+    object-fit: contain;
+    display: block;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.04);
+}
+
 @keyframes zoomIn {
     from {
         transform: scale(0.9);
@@ -1007,7 +1062,35 @@ body.lightbox-open {
     }
 }
 
+
 /* RESPONSIVO */
+
+
+
+@media (max-width: 900px) {
+    .lightbox-banners .lightbox-gallery {
+        columns: 2 220px;
+    }
+}
+
+@media (max-width: 600px) {
+    .lightbox-banners .lightbox-gallery {
+        columns: 1;
+    }
+}
+
+.lightbox-layouts .lightbox-content {
+    width: min(100% - 24px, 100%);
+}
+
+.lightbox-layouts .lightbox-gallery {
+    gap: 16px;
+}
+
+.lightbox-layouts .lightbox-gallery img {
+    aspect-ratio: auto;
+}
+
 
 @media (max-width: 900px) {
     .lightbox-gallery {
